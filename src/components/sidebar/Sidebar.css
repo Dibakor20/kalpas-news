@@ -1,0 +1,49 @@
+.sidebar_section{
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 5;
+    background-color: #ebf2f7;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 0 20px 20px 0;
+}
+.sidebar_profile{
+    margin: 40px 20px 30px;
+}
+.toggle_state{
+    margin: 40px 20px 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.toggle_state h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center
+}
+
+.toggle-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+.sidebar_feedback{
+    margin: 40px 20px 30px;
+    background-color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.sidebar_feedback h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.listening{
+    background-color: #97eec8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

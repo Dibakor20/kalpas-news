@@ -1,0 +1,42 @@
+.feedback_section{
+    background-color: hsla(0,0%,93.3%,.726);
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.feedback{
+    background-color: #ebf2f7;
+    width: 70%;
+    border-radius: 0 20px 20px 0;
+    position: relative;
+    box-shadow: 0 0 10px #c2c2c2;
+}
+.close{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  
+}
+.close-button{
+    border: none;
+    background-color: transparent;
+    color: red;
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.listening-color{
+    background-color: rgb(234, 162, 166);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.feedback_Form_section h3{
+    font-size: 16px;
+    font-weight: 600;
+}
