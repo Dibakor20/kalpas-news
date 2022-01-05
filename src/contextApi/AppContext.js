@@ -17,10 +17,6 @@ const AppContext = ({ children }) => {
   },[toggleState])
  
 
- 
-
- 
-
   return (
     <>
      <UserContext.Provider value={{ 
@@ -28,7 +24,7 @@ const AppContext = ({ children }) => {
           }}>
         <Sidebar />
         <Feedback />
-        <Users userData={userData} />
+        <Users userData={userData} setUserData={setUserData}/>
     </UserContext.Provider>
     </>
   );

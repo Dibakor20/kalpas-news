@@ -13,8 +13,7 @@ const Feedback = () => {
       }
     return (
         <>
-            {
-                drawerState ?  <div className='feedback_section'>
+                <div className={`${drawerState ? 'modal-open feedback_section' : 'modal-close'}`}>
                 <div className='feedback'>
                     <div className='close'>
                     <button className='close-button' onClick={feedbackClose}><i class="fas fa-times"></i></button>
@@ -33,8 +32,7 @@ const Feedback = () => {
                        
                     </div>
                 </div>
-            </div> : null
-           }
+            </div> 
         </>
     );
 };

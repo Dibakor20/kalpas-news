@@ -3,9 +3,11 @@
     box-shadow: 0 20px 100px rgb(34 34 34 / 15%);
     border: none!important;
     height:100%;
-    border-radius: 10px;
+    border-radius: 16px;
     padding-bottom: 10px;
-
+}
+.card_two{
+    border-radius: 16px;
 }
 .image{
     width: 100%;
@@ -18,6 +20,9 @@
 }
 .delete-button{
     color: red;
+}
+.description{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 767px){

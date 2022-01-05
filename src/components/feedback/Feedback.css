@@ -8,6 +8,18 @@
     bottom: 0;
     z-index: 100;
 }
+.modal-close{
+    position: absolute;
+    top: 0;
+    left: -4500px;
+
+}
+.modal-open{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
 .feedback{
     background-color: #ebf2f7;
     width: 70%;

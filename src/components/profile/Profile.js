@@ -6,7 +6,7 @@ const Profile = () => {
     <>
       <div className="profile_section d-flex ">
         <div className="img">
-          <img src="https://kalpasnewsfeed.netlify.app/static/media/profile1.cbc21c9c.jpg" alt="profile"  className="profile_img"/>
+          <img src="https://inno-scis-client.web.app/static/media/male.55a0b867.png" alt="profile"  className="profile_img"/>
         </div>
         <div className="profile_text mx-3">
           <h3>Hi, Reader</h3>
