@@ -1,7 +1,6 @@
 .sidebar_section{
     margin: 0;
     padding: 0;
-    width: 270px;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -46,4 +45,14 @@
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
+}
+.toggle-button-one{
+    border: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.toggle-button-two{
+    border: none;
+    padding: 8px 15px;
+    display: inline-block;
 }

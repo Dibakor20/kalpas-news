@@ -1,10 +1,16 @@
 import React from 'react';
+import { useContext } from 'react/cjs/react.development';
+import { UserContext } from '../../contextApi/AppContext';
 import Profile from '../profile/Profile';
 import './Feedback.css';
 import FeedbackForm from './FeedbackForm';
 
-const Feedback = ({drawerState,feedbackClose}) => {
-    
+const Feedback = () => {
+    const { drawerState, setDrawerState } = useContext(UserContext);
+
+    const feedbackClose = () => {
+        setDrawerState(false)
+      }
     return (
         <>
             {

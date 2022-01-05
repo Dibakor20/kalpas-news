@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Sidebar.css';
 import Profile from '../profile/Profile';
+import { UserContext } from '../../contextApi/AppContext';
 
-const Sidebar = ({feedbackOpen}) => {
+const Sidebar = () => {
+
+    const { toggleState, setToggleState ,drawerState, setDrawerState } = useContext(UserContext);
+
+    const handleChangeHorizental= () => {
+        setToggleState('horizental');
+      };
+      const handleChangeVerticle = () => {
+        setToggleState('vertical');
+    };
+    
+    const feedbackOpen = () => {
+        setDrawerState(true)
+      }
+    
     return (
         <> 
             <div className='sidebar_section'>
@@ -14,8 +29,8 @@ const Sidebar = ({feedbackOpen}) => {
                     <h3>View Toggle</h3>
                     
                     <div className='toggle-view d-flex justify-content-between'>
-                        <i class="fas fa-th toggle-icon"></i>
-                        <i class="fas fa-list toggle-icon"></i>
+                     <button className='toggle-button-one' style={{ backgroundColor: toggleState === 'horizental' && '#97eec8' }} onClick={handleChangeHorizental}><i class="fas fa-th toggle-icon"></i></button>   
+                      <button className='toggle-button-two' style={{ backgroundColor: toggleState === 'vertical' && '#97eec8' }}  onClick={handleChangeVerticle}><i class="fas fa-list toggle-icon"></i></button>  
                     </div>
                 </div>
 

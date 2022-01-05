@@ -1,28 +1,34 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import Feedback from "../components/feedback/Feedback";
 import Sidebar from "../components/sidebar/Sidebar";
+import Users from "../components/users/Users";
 
 export const UserContext = createContext();
 
 const AppContext = ({ children }) => {
+  const [toggleState, setToggleState] = useState('horizental')
   const [drawerState, setDrawerState] = useState(false)
+  const [userData,setUserData] = useState([])
 
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(res => res.json())
+    .then(data => setUserData(data))
+  },[toggleState])
+ 
 
-  const feedbackOpen = () => {
-    setDrawerState(true)
-  }
+ 
 
-  const feedbackClose = () => {
-    setDrawerState(false)
-  }
+ 
 
   return (
     <>
-     <UserContext.Provider value={{
-          drawerState, setDrawerState
+     <UserContext.Provider value={{ 
+          toggleState, setToggleState,drawerState, setDrawerState
           }}>
-        <Sidebar feedbackOpen={ feedbackOpen}/>
-        <Feedback drawerState={drawerState} feedbackClose={ feedbackClose}/>
+        <Sidebar />
+        <Feedback />
+        <Users userData={userData} />
     </UserContext.Provider>
     </>
   );
