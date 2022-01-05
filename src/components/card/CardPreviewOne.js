@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import './CardPreview.css';
 import Modal from '../modal/Modal';
+import imageone from '../../assets/images/img.jpg';
 
 const CardPreviewOne = ({ user, toggleState,handleDelete}) => {
     const {  id, title, body } = user;
@@ -27,7 +28,7 @@ const CardPreviewOne = ({ user, toggleState,handleDelete}) => {
                         }
                     </p>
                 </div>
-                <img src="https://bd.gaadicdn.com/upload/userfiles/images/61ac2953ae929.jpg" class="card-img-top" alt="..." className='image px-4' />
+                <img src={imageone} class="card-img-top" alt="..." className='image px-4' />
                
            </div>
         </>

@@ -1,5 +1,6 @@
 import React,{ useState } from 'react';
 import Modal from '../modal/Modal';
+import imageTwo from '../../assets/images/user.png';
 
 const CardPreviewTwo = ({ user, toggleState,handleDelete }) => {
     const { userId, id, title, body } = user;
@@ -11,7 +12,7 @@ const CardPreviewTwo = ({ user, toggleState,handleDelete }) => {
                 <i class="fas fa-times"></i>
             </div>
                 <div className='d-flex'>
-                    <img src="https://inno-scis-client.web.app/static/media/male.55a0b867.png" alt=""  className='image-two'/>
+                    <img src={imageTwo} alt=""  className='image-two'/>
                     <div>
                         <h5>{title}</h5>
                         <span>{ body.slice(0,100)}  <p className='description' onClick={()=>setIsRead(true)} data-toggle="modal" data-target="#exampleModalLong" >Read</p>
