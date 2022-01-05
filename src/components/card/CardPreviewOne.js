@@ -1,6 +1,5 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import './CardPreview.css';
-import { useState } from 'react/cjs/react.development';
 import Modal from '../modal/Modal';
 
 const CardPreviewOne = ({ user, toggleState,handleDelete}) => {

@@ -1,7 +1,6 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useContext, useState} from "react";
 import "./Users.css";
 import Sidebar from "../sidebar/Sidebar";
-import { useContext, useState } from "react/cjs/react.development";
 import CardPreviewOne from "../card/CardPreviewOne";
 import { UserContext } from "../../contextApi/AppContext";
 import CardPreviewTwo from "../card/CardPreviewTwo";

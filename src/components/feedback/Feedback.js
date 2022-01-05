@@ -1,5 +1,4 @@
-import React from 'react';
-import { useContext } from 'react/cjs/react.development';
+import React,{ useContext } from 'react';
 import { UserContext } from '../../contextApi/AppContext';
 import Profile from '../profile/Profile';
 import './Feedback.css';
